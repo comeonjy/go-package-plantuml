@@ -1,4 +1,4 @@
-module git.oschina.net/jscode/go-package-plantuml
+module github.com/comeonjy/go-package-plantuml
 
 go 1.15
 
