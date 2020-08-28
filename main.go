@@ -2,7 +2,7 @@ package main
 
 import (
 	"git.oschina.net/jscode/go-package-plantuml/codeanalysis"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"fmt"
 	"github.com/jessevdk/go-flags"
 	"os"
@@ -64,7 +64,7 @@ func main() {
 
 	result := codeanalysis.AnalysisCode(config)
 
-	result.OutputToFile("/tmp/uml.txt")
+	result.OutputToFile(opts.OutputFile)
 
 }
 

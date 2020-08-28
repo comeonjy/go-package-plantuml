@@ -2,7 +2,7 @@ package main
 
 import (
 	"git.oschina.net/jscode/go-package-plantuml/codeanalysis"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"fmt"
 	"io/ioutil"
 )
@@ -29,7 +29,7 @@ func main() {
 
 	result.OutputToFile("/tmp/uml.txt")
 
-	bytes, _ := ioutil.ReadFile("/tmp/uml.txt")
+	bytes, _ := ioutil.ReadFile("./uml.txt")
 
 	fmt.Println(string(bytes))
 
